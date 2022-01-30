@@ -1,0 +1,111 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 3px solid rgb(228, 123, 53);
+    margin: auto;
+}
+
+#tRex {
+    width: 50px;
+    height: 50px;
+    background-image: url(image/tRex.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(image/cactus.png);
+    background-size: 20px 50px;
+    position: relative;
+    top: 110px;
+    left: 600px;
+    animation: cactuvMove 1s infinite linear;
+}
+
+#score {
+    width: auto;
+    height: auto;
+    position: 258px;
+    top: 20px;
+    right: 0;
+}
+
+#cloud {
+    width: 41px;
+    height: 40px;
+    background-image: url(image/cloud1.png);
+    background-size: 40px 50px;
+    position: relative;
+    top: -100px;
+    left: 400px;
+    animation: cloudMove 1.5s infinite linear;
+}
+
+#cloud1 {
+    width: 41px;
+    height: 40px;
+    background-image: url(image/cloud1.png);
+    background-size: 40px 50px;
+    position: relative;
+    top: -100px;
+    left: 500px;
+    animation: cloudMove 2s infinite linear;
+}
+
+#cloud2 {
+    width: 41px;
+    height: 40px;
+    background-image: url(image/cloud1.png);
+    background-size: 40px 50px;
+    position: relative;
+    top: -100px;
+    left: 600px;
+    animation: cloudMove 1s infinite linear;
+}
+
+@keyframes cloudMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -30px;
+    }
+}
+
+@keyframes cactuvMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jumpMove 0.3s linear;
+}
+
+@keyframes jumpMove {
+    0% {
+        top: 150px;
+    }
+    25% {
+        top: 130px;
+    }
+    60% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+body {
+    font-family: "Potta One", cursive;
+}
